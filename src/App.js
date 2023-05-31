@@ -7,11 +7,10 @@ import Portfolio from './screens/Portfolio';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import styles from './CSS/Main.css'
-import navStyle from './CSS/NavBar.css'
 function App() {
   return (
     <>
-    <NavBar styles={navStyle}/>
+    <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutMe/>}/>
