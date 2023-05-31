@@ -9,15 +9,17 @@ import Footer from './components/Footer';
 import styles from './CSS/Main.css'
 function App() {
   return (
-    <>
-    <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<AboutMe/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
-      </Routes>
-    <Footer/>
-    </>
+    <div className={styles.pseudoBody}>
+      <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<AboutMe/>}/>
+          <Route path="/portfolio" element={<Portfolio/>}/>
+        </Routes>
+      <Footer/>
+    </div>
+   
+   
   );
 }
 

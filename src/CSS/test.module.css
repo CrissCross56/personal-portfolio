@@ -1,8 +1,15 @@
 .navdiv, .bio{
     display: grid;
 }
-.bio{
-    margin-right: 100px;
+
+.pseudoBody{
+    position: relative;
+}
+
+.intro{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 35px;
 }
 .navdiv{
     
@@ -38,21 +45,29 @@
 }
 
 .footer{
-    
-    width: 55px;
-    height: 50px;
+    position: absolute;
+    text-align: center;
+    font-size: 200%;
+    width: 150px;
+    height: 150px;
+    right: 50%;
+    bottom: 0;
     /* margin-right: 50%;
     margin-left: 50%; */
-    margin: 0 auto;
+  
+   
     
 }
 
-.text, .intro{ 
-    text-align: justify;
+.text, .intro, .bio{ 
     color: white;
 }
 
-.intro{
+.intro, .bio{
+    text-align: justify;
+}
+
+.bio{
     font-size: 200%;
     margin-right: 500px;
     padding-left: 50px;
