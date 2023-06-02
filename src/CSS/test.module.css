@@ -1,7 +1,12 @@
-.navdiv, .bio{
+.navdiv, .bio, .projectContainer{
     display: grid;
 }
-
+.projectContainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+}
 .pseudoBody{
     position: relative;
 }
@@ -63,7 +68,7 @@
     color: white;
 }
 
-.intro, .bio{
+.intro, .bio, .description{
     text-align: justify;
 }
 
@@ -83,11 +88,14 @@
     margin-left: 100px;
 }
 
-.digimonImg, .hangmanImg{
+.photo{
     width: 25%;
     height: 50%;
+    float: left;
 }
 
 .project{
+   
     font-size: 18px;
+    
 }
