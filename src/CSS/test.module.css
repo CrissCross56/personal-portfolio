@@ -82,3 +82,12 @@
     float: left;
     margin-left: 100px;
 }
+
+.digimonImg, .hangmanImg{
+    width: 25%;
+    height: 50%;
+}
+
+.project{
+    font-size: 18px;
+}
