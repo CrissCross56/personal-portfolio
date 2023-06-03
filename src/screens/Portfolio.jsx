@@ -1,6 +1,5 @@
 //import the navbar and the footer
-import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
+
 import Project from "../components/Project"
 import hangman from "../assets/hangmanProj.png"
 import digimon from "../assets/digimonProj.png"
