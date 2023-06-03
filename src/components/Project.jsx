@@ -5,7 +5,7 @@ export default function Project(props){
             
             <div className={styles.project}>
                 {/* more to come later*/}
-                <img src={props.photo} className={styles.photo} alt="image of project"></img>
+                <img src={props.photo} className={styles.photo} alt="project"></img>
                 <p className={styles.description}>{props.description}</p>
                 <ul>
                     <li>Hosted Domain: <a href={props.domain}>{props.domain}</a></li>
