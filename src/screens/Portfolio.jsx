@@ -1,18 +1,27 @@
 //import the navbar and the footer
-
+import { NavLink } from "react-router-dom"
 import Project from "../components/Project"
 import hangman from "../assets/hangmanProj.png"
 import digimon from "../assets/digimonProj.png"
 import styles from "../CSS/test.module.css"
+import {motion} from 'framer-motion'
 export default function Portfolio(){
     const hangmanDomain = 'https://classroomhangman.netlify.app/';
     const digimonDomain = 'https://banana-bunch-digi-deck.netlify.app/';
     const hangmanRepo = 'https://github.com/CrissCross56/Front-End-Game'; 
     const digimonRepo = '';
     return(
-        <div className={styles.projectContainer}>
+        <div>
             <Project description={'My first project at General assembly, a game of hangman.'} domain={hangmanDomain} repo={hangmanRepo} photo={hangman}/>
             <Project description={'The first group project I worked on at General Assembly, a deck builder website where users can build decks for the trading card game, Digimon'} domain={digimonDomain} repo={digimonRepo} photo={digimon}></Project>
+            <div className={styles.container}>
+                <NavLink to="/"><motion.button initial={{x:"-100vw"}} animate={{x:0}}
+                 whileHover={{
+                 scale:1.1,
+                 boxShadow: "0px 0px 8px rgb(255,255,255)"
+                }} className={styles.buttonNav}>Home</motion.button></NavLink>
+            </div>
+           
         </div>
     )
 }

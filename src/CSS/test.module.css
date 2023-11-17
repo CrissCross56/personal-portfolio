@@ -40,14 +40,14 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.links a:visited{
+/* .links a:visited{
     text-decoration: none;
     color: White;
 }
 .links a:hover{
     color: black;
     background-color: white;
-}
+} */
 
 .footer{
     position: absolute;
@@ -71,7 +71,9 @@
 .intro, .bio, .description{
     text-align: justify;
 }
-
+.description{
+    padding-left: 1.5vw;
+}
 .bio{
     font-size: 150%;
     margin-right: 100px;
@@ -95,7 +97,31 @@
 }
 
 .project{
+    padding: 5vh;
    
+    display: block;
     font-size: 18px;
     
+}
+
+.container{
+    text-align: center;
+    border: none;
+    padding: 1vh;
+}
+
+.buttonNav{
+    display: inline-block; /* Make the button a block-level element to take up the full width available */
+    margin: 0 auto; /* Center the block-level element horizontally using auto margins */
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+    min-height: 5vh;
+    min-width: 5vw;
+    font-size: 2em;
+}
+
+.svg{
+    padding: 1vw;
 }

@@ -1,10 +1,12 @@
 //import the navbar and the footer
 
 import BrandStatement from "../components/BrandStatement"
+import Bio from "../components/Bio"
 export default function Home(){
     return(
         <div>
-            <BrandStatement></BrandStatement>
+            <Bio></Bio>
+            {/* <BrandStatement></BrandStatement> */}
         </div>
     )
 }

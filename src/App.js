@@ -9,7 +9,7 @@ import styles from './CSS/Main.css'
 function App() {
   return (
     <div className={styles.pseudoBody}>
-      <NavBar/>
+      {/* <NavBar/> */}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<AboutMe/>}/>

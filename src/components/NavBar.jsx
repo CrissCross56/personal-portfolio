@@ -7,7 +7,7 @@ export default function NavBar(){
             <div className={styles.navdiv}>
                 <div className={styles.links}>
                     <NavLink  to="/" >Home</NavLink>
-                    <NavLink to="/about">About Me</NavLink>
+                    {/* <NavLink to="/about">About Me</NavLink> */}
                     <NavLink  to="/portfolio" >Portfolio</NavLink>
                 </div>
                 
