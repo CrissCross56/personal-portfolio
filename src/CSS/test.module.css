@@ -50,13 +50,17 @@
 } */
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
     text-align: center;
     font-size: 200%;
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     right: 50%;
     bottom: 0;
+    
     /* margin-right: 50%;
     margin-left: 50%; */
   

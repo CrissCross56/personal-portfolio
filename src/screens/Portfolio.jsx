@@ -1,8 +1,7 @@
 //import the navbar and the footer
 import { NavLink } from "react-router-dom"
 import Project from "../components/Project"
-import hangman from "../assets/hangmanProj.png"
-import digimon from "../assets/digimonProj.png"
+
 import styles from "../CSS/test.module.css"
 import {motion} from 'framer-motion'
 export default function Portfolio(){
@@ -10,10 +9,17 @@ export default function Portfolio(){
     const digimonDomain = 'https://banana-bunch-digi-deck.netlify.app/';
     const hangmanRepo = 'https://github.com/CrissCross56/Front-End-Game'; 
     const digimonRepo = '';
+    const calcRepo = "https://github.com/CrissCross56/Calculator";
+    const calcDomain = "https://bootstrap-calculator.vercel.app";
+    //have the links for the image urls below here
+    const calcPhoto = 'https://i.imgur.com/NflhtS7.png';
+    const digimonPhoto = 'https://i.imgur.com/8D1JJd1.png';
+    const hangmanPhoto = 'https://i.imgur.com/jWdE5n6.png';
     return(
         <div>
-            <Project description={'My first project at General assembly, a game of hangman.'} domain={hangmanDomain} repo={hangmanRepo} photo={hangman}/>
-            <Project description={'The first group project I worked on at General Assembly, a deck builder website where users can build decks for the trading card game, Digimon'} domain={digimonDomain} repo={digimonRepo} photo={digimon}></Project>
+            <Project description={'My first project at General assembly, a game of hangman.'} domain={hangmanDomain} repo={hangmanRepo} photo={hangmanPhoto}/>
+            <Project description={'The first group project I worked on at General Assembly, a deck builder website where users can build decks for the trading card game, Digimon'} domain={digimonDomain} repo={digimonRepo} photo={digimonPhoto}></Project>
+            <Project description={"My first project using bootstrap, to try and test my knowledge of bootstrap's responsive utility classes"} domain={calcDomain} repo={calcRepo} photo={calcPhoto}></Project>
             <div className={styles.container}>
                 <NavLink to="/"><motion.button initial={{x:"-100vw"}} animate={{x:0}}
                  whileHover={{
