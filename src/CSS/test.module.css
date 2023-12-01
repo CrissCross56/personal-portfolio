@@ -49,20 +49,26 @@
     background-color: white;
 } */
 
-.footer{
+.socials{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start; /* Align items to the start of the container (upper edge) */
+    align-items: flex-end; /* Align items to the end of the container (right edge) */
+    position: fixed; /* Fix the position so it stays in place while scrolling */
+    top: 10px; /* Adjust the distance from the top */
+    right: 10px; /* Adjust the distance from the right */
+}
+
+.footer{
+
     position: absolute;
     text-align: center;
     font-size: 200%;
-    /* width: 150px;
-    height: 150px; */
+
     right: 50%;
     bottom: 0;
     
-    /* margin-right: 50%;
-    margin-left: 50%; */
+    
   
    
     
