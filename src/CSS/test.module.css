@@ -1,6 +1,6 @@
-.navdiv, .bio, .projectContainer{
+/* .navdiv, .bio, .projectContainer{
     display: grid;
-}
+} */
 .projectContainer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -49,23 +49,24 @@
     background-color: white;
 } */
 
-.footer{
+.socials{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start; /* Align items to the start of the container (upper edge) */
+    align-items: flex-end; /* Align items to the end of the container (right edge) */
+    position: fixed; /* Fix the position so it stays in place while scrolling */
+    top: 10px; /* Adjust the distance from the top */
+    right: 10px; /* Adjust the distance from the right */
+}
+
+.footer{
+
     position: absolute;
     text-align: center;
     font-size: 200%;
-    /* width: 150px;
-    height: 150px; */
+
     right: 50%;
     bottom: 0;
-    
-    /* margin-right: 50%;
-    margin-left: 50%; */
-  
-   
-    
 }
 
 .project, .intro, .bio, .footer{ 
@@ -79,19 +80,29 @@
     padding-left: 1.5vw;
 }
 .bio{
-    font-size: 150%;
-    margin-right: 100px;
+    font-size: 200%;
+    position: relative;
+
+    margin-right: 90px;
     padding-left: 50px;
+    padding-right: 10px;
+    /* border: 1px red solid; */
+    text-wrap: pretty;
+
 }
 .img{
-    -webkit-box-shadow: 6px 4px 22px 0px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 6px 4px 22px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 4px 22px 0px rgba(0,0,0,0.75);
-    box-shadow: 6px 4px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 22px 0px rgba(0,0,0,0.75); */
     border-radius: 50%;
     width:25%;
     height: 50%;
     float: left;
     margin-left: 100px;
+    margin-right: 10px;
+    
+    /* border: 1px solid red; */
+    
 }
 
 .photo{
@@ -115,8 +126,9 @@
 }
 
 .buttonNav{
-    display: inline-block; /* Make the button a block-level element to take up the full width available */
-    margin: 0 auto; /* Center the block-level element horizontally using auto margins */
+   
+   /* display: inline-block;  Make the button a block-level element to take up the full width available */
+   position: absolute;
     background-color: transparent;
     color: white;
     border-color: white;
@@ -124,6 +136,8 @@
     min-height: 5vh;
     min-width: 5vw;
     font-size: 2em;
+    margin: 10px 30px 0px 0px;
+   
 }
 
 .svg{
