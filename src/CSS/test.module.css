@@ -52,10 +52,10 @@
 .socials{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the start of the container (upper edge) */
-    align-items: flex-end; /* Align items to the end of the container (right edge) */
+    justify-content: space-evenly; /* Align items to the start of the container (upper edge) */
+    align-items: center; /* Align items to the end of the container (right edge) */
     position: fixed; /* Fix the position so it stays in place while scrolling */
-    top: 10px; /* Adjust the distance from the top */
+    top: 20px; /* Adjust the distance from the top */
     right: 10px; /* Adjust the distance from the right */
 }
 
@@ -73,16 +73,17 @@
     color: white;
 }
 
-.intro, .bio, .description{
+.intro,  .description{
     text-align: justify;
 }
 .description{
     padding-left: 1.5vw;
+    margin: 0 500px 0 0;
 }
 .bio{
     font-size: 200%;
     position: relative;
-
+    text-align: left;
     margin-right: 90px;
     padding-left: 50px;
     padding-right: 10px;
@@ -105,6 +106,16 @@
     
 }
 
+.smallImgDiv{
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+}
+
+ .sndImg{
+    display: none;
+}
+
 .photo{
     width: 25%;
     height: 50%;
@@ -116,30 +127,85 @@
    
     display: block;
     font-size: 18px;
-    
+    margin: 0 0 0 50px;
 }
 
-.container{
+/* .container{
     text-align: center;
     border: none;
     padding: 1vh;
-}
+} */
 
 .buttonNav{
    
    /* display: inline-block;  Make the button a block-level element to take up the full width available */
-   position: absolute;
+    /* position: absolute; */
     background-color: transparent;
     color: white;
     border-color: white;
-    border-radius: 25px;
-    min-height: 5vh;
-    min-width: 5vw;
+    border-radius: 50%;
+    min-height: 3vh;
+    min-width: 3vw;
     font-size: 2em;
-    margin: 10px 30px 0px 0px;
+    margin: 0 0 10px 0;
+    /* margin: 10px 30px 0px 0px; */
    
 }
 
-.svg{
+.svg, .bars{
     padding: 1vw;
+    stroke-width: 20px;
+    stroke: white;
+    fill: transparent;
+    
+}
+
+@media (min-width:684px){
+    .bars{
+        display: none;
+    }
+}
+
+@media (max-width:683px){
+    .bars{
+        position: fixed;
+       
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    /* .socials{
+        flex-direction: row-reverse;
+        position: fixed;
+        left: 35px;
+        top: 40px;
+        border: 1px solid red;
+        margin-right: 595px;
+    } */
+    .svg, .buttonNav{
+        display: none;
+        right: none;
+        
+    }
+}
+
+@media(max-width: 682px){
+    .img{
+        /* float: none;
+        max-width: 100%;
+        height: auto;
+       */
+       display: none;
+    }
+    /* .smallImgDiv{
+        display: block;
+        width: 400px;
+        height: 400px;
+        border: 100px solid red;
+    } */
+    .sndImg{
+        display: block;
+        max-width: 80%;
+        margin-left: auto;
+        border-radius: 25%;
+    }
 }

@@ -12,6 +12,7 @@ export default function Project(props){
                     <li>Hosted Domain: <a href={props.domain}>{props.domain}</a></li>
                     <li>Github Repo: <a href={props.repo}>{props.repo}</a></li>
                 </motion.ul>
+                <motion.p initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}}  className={styles.description}>Date Completed: {props.date}</motion.p>
             </div>
            
          
