@@ -160,9 +160,20 @@
     
 }
 
+.portfolio{
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 @media (min-width:684px){
     .bars{
         display: none;
+    }
+    .img{
+        margin-left: auto;
+        width: 300px;
+        height: auto;
     }
 }
 

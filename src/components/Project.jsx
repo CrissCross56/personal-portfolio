@@ -6,7 +6,7 @@ export default function Project(props){
             
             <div className={styles.project}>
                 {/* more to come later*/}
-                <motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} whileHover={{scale:1.1}} src={props.photo} className={styles.photo} alt="project"></motion.img>
+               <a href={props.domain}><motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} whileHover={{scale:1.1}} src={props.photo} className={styles.photo} alt="project"></motion.img></a>
                 <motion.p  initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}}  className={styles.description}>{props.description}</motion.p>
                 <motion.ul initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}} src={props.photo}>
                     <li>Hosted Domain: <a href={props.domain}>{props.domain}</a></li>
