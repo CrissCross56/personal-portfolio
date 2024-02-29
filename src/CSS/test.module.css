@@ -221,3 +221,12 @@
         border-radius: 25%;
     }
 }
+
+@media(max-width: 499px){
+    .socials{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+}
