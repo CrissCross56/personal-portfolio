@@ -3,26 +3,26 @@ import { NavLink } from "react-router-dom";
 import {motion} from 'framer-motion'
 import { useState } from "react";
 
-export default function Button(){
-    const [path, setPath] = useState("/portfolio")
-    const [innerTxt, setTxt] = useState(">")
-    function  togglePath(){
-        //check to see what the current path is, if its portfolio, change the path back to the homescreen, and vice versa
-        if(path === "/portfolio"){
-            setPath("/")
+export default function Button({path, togglePath, innerTxt}){
+    // const [path, setPath] = useState("/portfolio")
+    // const [innerTxt, setTxt] = useState(">")
+    // function  togglePath(){
+    //     //check to see what the current path is, if its portfolio, change the path back to the homescreen, and vice versa
+    //     if(path === "/portfolio"){
+    //         setPath("/")
             
-        }
-        else if(path === "/"){
-            setPath("/portfolio")
-        }
-        //also change the text of the button
-        if(innerTxt === ">"){
-            setTxt("<")
-        }
-        else if(innerTxt === "<"){
-            setTxt(">")
-        }
-    }
+    //     }
+    //     else if(path === "/"){
+    //         setPath("/portfolio")
+    //     }
+    //     //also change the text of the button
+    //     if(innerTxt === ">"){
+    //         setTxt("<")
+    //     }
+    //     else if(innerTxt === "<"){
+    //         setTxt(">")
+    //     }
+    // }
     //className={styles.container}>
     return(
         <div>

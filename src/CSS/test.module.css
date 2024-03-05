@@ -69,7 +69,7 @@
     bottom: 0;
 }
 
-.project, .intro, .bio, .footer{ 
+.project, .intro, .bio, .footer,.mobileMenuLabel{ 
     color: white;
 }
 
@@ -109,7 +109,6 @@
 .smallImgDiv{
     height: 400px;
     width: 400px;
-    border: 1px solid red;
 }
 
  .sndImg{
@@ -166,6 +165,45 @@
     overflow-y: auto;
 }
 
+.burgerList{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.burgerList, li{
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-decoration: underline 1px white;
+
+
+    /*  V  Below is for testing purposes V*/
+    /* border: 1px solid red; */
+}
+
+
+.burgerList, a, a:visited{
+    text-decoration:  none;
+    color: white;
+    
+}
+
+.burgerList,li:hover,a:hover ,a:visited:hover{
+    color: #439f05;
+    text-decoration: underline 1px #439f05;
+}
+
+.burgerList,li:hover svg{
+    stroke: currentColor;
+}
+
+.gitHubBurger, .emailBurger, .linkedBurger{
+    height: 30px;
+    width: 40px;
+    padding-left: 10px;
+}
+
+
 @media (min-width:684px){
     .bars{
         display: none;
@@ -181,11 +219,11 @@
     .bars{
         /*remove display none in order for hamburger menu to show and for its rules to apply*/
         display: none;
-
+/* 
         position: fixed;
        
         margin-left: 5%;
-        margin-top: 50px;
+        margin-top: 50px; */
     }
     /* .socials{
         flex-direction: row-reverse;
@@ -227,6 +265,33 @@
         display: none;
     }
     .bars{
-        display: block;
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-top: -5px;
+        margin-left: -5px;
     }
+    .sndImg{
+        /* mess around here with the second image */
+        margin: 0 auto;
+    }
+    /* .mobileNavMenu{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        
+    } */
+    .mobileMenuLabel{
+     /* display: flex;
+     justify-content: start; */
+     /* border: 1px solid red;  <-- for when you need it*/
+     font-size: 200%;
+
+     /*weird things happend with the labels spacing from the top when the below line is removed*/
+     margin-top: 0px;
+     padding: 1px;
+    }
+   
 }
