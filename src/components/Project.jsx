@@ -6,11 +6,14 @@ export default function Project(props){
             
             <div className={styles.project}>
                 {/* more to come later*/}
-               <a href={props.domain}><motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} whileHover={{scale:1.1}} src={props.photo} className={styles.photo} alt="project"></motion.img></a>
+                <div className={styles.scream}>
+                <a href={props.domain}><motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} whileHover={{scale:1.1}} src={props.photo} className={styles.photo} alt="project"></motion.img></a>
+
+                </div>
                 <motion.p  initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}}  className={styles.description}>{props.description}</motion.p>
-                <motion.ul initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}} src={props.photo}>
-                    <li>Hosted Domain: <a href={props.domain}>{props.domain}</a></li>
-                    <li>Github Repo: <a href={props.repo}>{props.repo}</a></li>
+                <motion.ul className={styles.projectList} initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}} >
+                    <li className={styles.projectLink}>Hosted Domain: <a href={props.domain}>{props.domain}</a></li>
+                    <li className={styles.projectLink}>Github Repo: <a href={props.repo}>{props.repo}</a></li>
                 </motion.ul>
                 <motion.p initial={{x:"100vw"}} animate={{x:0}} transition={{stiffness:0}}  className={styles.description}>Date Completed: {props.date}</motion.p>
             </div>

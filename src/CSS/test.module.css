@@ -73,13 +73,10 @@
     color: white;
 }
 
-.intro,  .description{
+.intro{
     text-align: justify;
 }
-.description{
-    padding-left: 1.5vw;
-    margin: 0 500px 0 0;
-}
+
 .bio{
     font-size: 200%;
     position: relative;
@@ -115,19 +112,7 @@
     display: none;
 }
 
-.photo{
-    width: 25%;
-    height: 50%;
-    float: left;
-}
 
-.project{
-    padding: 5vh;
-   
-    display: block;
-    font-size: 18px;
-    margin: 0 0 0 50px;
-}
 
 /* .container{
     text-align: center;
@@ -160,10 +145,59 @@
 }
 
 .portfolio{
+    /* border: 1px solid purple; */
     height: 800px;
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.project{
+    /* padding: 5vh; */
+    padding-top:5vh;
+    padding-right: 0px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 18px;
+    margin: 0 0 0 50px;
+}
+
+.projectList{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 1px;
+    padding: 0px;
+
+}
+
+.projectLink{
+    margin: 5px;
+  
+    /* border: 1px solid blue; */
+
+}
+
+.description{
+    padding-left: 1.5vw;
+    margin: 0 500px 0 0;
+}
+
+.scream{
+    display:inline-block;
+    /* border: 1px solid magenta; */
+}
+
+.photo{
+    width: 25%;
+    height: 50%;
+    float: left;
+    /* border: 1px solid orange; */
+}
+
+
 
 .burgerList{
     display: flex;
@@ -174,13 +208,15 @@
 .burgerList, li{
     font-size: 30px;
     margin-bottom: 50px;
-    text-decoration: underline 1px white;
+    /* text-decoration: underline 1px white; */
 
 
     /*  V  Below is for testing purposes V*/
     /* border: 1px solid red; */
 }
 
+
+/* the css below here for the burger menu and its links are interfering with other links on the portfolio, revise names*/
 
 .burgerList, a, a:visited{
     text-decoration:  none;
@@ -203,6 +239,7 @@
     padding-left: 10px;
 }
 .crossSvg{
+
 }
 
 
