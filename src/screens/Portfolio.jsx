@@ -21,7 +21,7 @@ export default function Portfolio(){
     return(
         <div className={styles.portfolio}>
             <Project description={'My first project at General assembly, a game of hangman.'} domain={hangmanDomain} repo={hangmanRepo} photo={hangmanPhoto} date={"Mar 30, 2023"}/>
-            <Project description={'The first group project I worked on at General Assembly, a deck builder website where users can build decks for the trading card game, Digimon.'} domain={digimonDomain} repo={digimonRepo} photo={digimonPhoto} date={"May 30, 2023"}></Project>
+            <Project className={styles.digiProj} description={'The first group project I worked on at G.A. a deck builder where users can build decks for the trading card game, Digimon.'} domain={digimonDomain} repo={digimonRepo} photo={digimonPhoto} date={"May 30, 2023"}></Project>
             <Project description={"My first project using bootstrap, to try and test my knowledge of bootstrap's responsive utility classes."} domain={calcDomain} repo={calcRepo} photo={calcPhoto} date={"Nov 1, 2023"}></Project>
             <Project description={"The result of a weeklong, in-house, hackathon, ran by GA for UI/UX and Software grads. I had to learn how to use Next.js on the fly. Our team won crowd favorite."} domain={choaDomain} repo = {choaRepo} photo={choaPhoto} date = {"December 8th, 2023"}/>
 

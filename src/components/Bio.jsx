@@ -7,7 +7,7 @@ import Bars from "./bars";
 const profilePic = 'https://i.imgur.com/H2Ta1Ci.jpg';
 export default function Bio(){
     return(
-        <div>
+        <div className={styles.bioDiv}>
             {/* <Bars/> */}
             <motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} src={profilePic} className={styles.sndImg} alt="Grant"/>
             <motion.p initial={{opacity:0, x: "100vw"}} animate={{opacity:[0.2,0.4,0.6,0.8,1], x:0}} transition={{stiffness:0}} className={styles.bio}>            <motion.img initial={{x:"-100vw"}} animate={{x:0}} transition={{stiffness:0}} src={profilePic} className={styles.img} alt="Grant"/>

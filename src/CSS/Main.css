@@ -5,8 +5,8 @@
 
 body{
 
-    background: #439f05;
-    background: radial-gradient(circle, rgba(67,159,5,1) 39%, rgba(44,224,14,1) 94%, rgba(44,224,14,1) 99%);
+    background: #153500;
+    /* background: radial-gradient(circle, rgba(67,159,5,1) 39%, rgba(44,224,14,1) 94%, rgba(44,224,14,1) 99%); */
 }
 
 a:visited{

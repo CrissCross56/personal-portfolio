@@ -2,11 +2,19 @@
     display: grid;
 } */
 .projectContainer{
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 2px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; */
 }
+
+/* .portfolio{
+    height: 900px;
+    width: 100%;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+} */
 .pseudoBody{
     position: relative;
 }
@@ -55,8 +63,9 @@
     justify-content: space-evenly; /* Align items to the start of the container (upper edge) */
     align-items: center; /* Align items to the end of the container (right edge) */
     position: fixed; /* Fix the position so it stays in place while scrolling */
-    top: 20px; /* Adjust the distance from the top */
-    right: 10px; /* Adjust the distance from the right */
+     /*  top: 20px; Adjust the distance from the top */
+     /*  right: 10px; Adjust the distance from the right */
+     margin-right: 85%;
 }
 
 .footer{
@@ -69,7 +78,7 @@
     bottom: 0;
 }
 
-.project, .intro, .bio, .footer,.mobileMenuLabel{ 
+.intro, .bio, .footer,.mobileMenuLabel{ 
     color: white;
 }
 
@@ -86,6 +95,7 @@
     padding-right: 10px;
     /* border: 1px red solid; */
     text-wrap: pretty;
+    /* overflow: scroll; */
 
 }
 .img{
@@ -110,6 +120,14 @@
 
  .sndImg{
     display: none;
+}
+
+.bioDiv{
+    margin-left: 20px;
+    /* border:  1px solid red; */
+    padding-left: 20px;
+    height: 100vh;
+    overflow: scroll;
 }
 
 
@@ -144,58 +162,6 @@
     
 }
 
-.portfolio{
-    /* border: 1px solid purple; */
-    height: 800px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.project{
-    /* padding: 5vh; */
-    padding-top:5vh;
-    padding-right: 0px;
-    /* border: 1px solid white; */
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 18px;
-    margin: 0 0 0 50px;
-}
-
-.projectList{
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 1px;
-    padding: 0px;
-
-}
-
-.projectLink{
-    margin: 5px;
-  
-    /* border: 1px solid blue; */
-
-}
-
-.description{
-    padding-left: 1.5vw;
-    margin: 0 500px 0 0;
-}
-
-.scream{
-    display:inline-block;
-    /* border: 1px solid magenta; */
-}
-
-.photo{
-    width: 25%;
-    height: 50%;
-    float: left;
-    /* border: 1px solid orange; */
-}
 
 
 
@@ -224,23 +190,27 @@
     
 }
 
-.burgerList,li:hover,a:hover ,a:visited:hover{
+ .burgerListItem:hover, .burgerLink:hover, .burgerLink:visited:hover{
     color: #439f05;
     text-decoration: underline 1px #439f05;
 }
 
-.burgerList,li:hover svg{
-    stroke: currentColor;
+.burgerLinkEmail:hover{
+    color: #439f05;
 }
+
+/* .burgerList,li:hover svg{
+    stroke: currentColor;
+} */
 
 .gitHubBurger, .emailBurger, .linkedBurger{
     height: 30px;
     width: 40px;
     padding-left: 10px;
-}
-.crossSvg{
+    stroke: currentColor;
 
 }
+
 
 
 @media (min-width:684px){
@@ -275,6 +245,9 @@
     .socials{
         margin-right: 85%;
     }
+    /* .bioDiv{
+        overflow: scroll;
+    } */
 }
 
 @media(max-width: 682px){
@@ -297,9 +270,12 @@
         margin-left: auto;
         border-radius: 25%;
     }
+    /* .bioDiv{
+        overflow: scroll;
+    } */
 }
 
-@media(max-width: 499px){
+@media(max-width: 540px){
     .socials{
         display: none;
     }
@@ -332,5 +308,14 @@
      margin-top: 0px;
      padding: 1px;
     }
-   
+   .bioDiv{
+    /* border: 1px solid; */
+    height: 80vh;
+   }
+   .bio{
+    padding: 0px;
+    /* height: 100vh; */
+    /* overflow: scroll; */
+    /* border: 1px solid red; */
+   }
 }

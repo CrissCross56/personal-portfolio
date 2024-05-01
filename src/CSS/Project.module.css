@@ -1,0 +1,93 @@
+
+.project{
+
+    padding: 5vh; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* padding-top:5vh;
+    padding-right: 0px; */
+    /* border: 1px solid white; */
+    /* color: white;
+    display: flex;
+    flex-direction: row;
+    */
+    margin: 10px 80px 10px 80px; 
+    
+}
+
+/* .datesLinks{
+    display: flex;
+    flex-direction: column;
+    color: white;
+} */
+
+.projectList{
+    /* border: 1px solid red; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    /* margin-left: 1px; */
+    padding: 0px;
+
+}
+
+.projectLink{
+    /* margin:5px 0px; */
+  
+    /* border: 1px solid blue; */
+    font-size: 25px;
+    text-decoration: underline;
+
+}
+
+.description{
+    /* padding-left: 1.5vw; */
+    /* margin: 0 500px 0 0; */
+    font-size: 25px;
+}
+
+.endDate{
+    font-size: 25px;
+}
+
+.imgDiv{
+    display:inline-block;
+    /* border: 1px solid magenta; */
+    
+}
+
+.photo{
+    width: 25%;
+    height: 50%;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10%;
+    /* border: 1px solid orange; */
+    box-shadow: 1px 1px 0px white;
+    min-width: 300px;
+
+   
+}
+
+/*wrtie code for responsive code for the portfolio*/
+@media (max-width:700px){
+   
+}
+
+@media (max-width:685px){
+   
+
+
+}
+
+@media(max-width:683px){
+   
+}
+
+@media (max-width:670px){
+   
+    
+}
+
