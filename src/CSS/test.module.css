@@ -1,20 +1,19 @@
 /* .navdiv, .bio, .projectContainer{
     display: grid;
 } */
-.projectContainer{
-    /* grid-template-columns: repeat(2, 1fr);
+/* .projectContainer{
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 2px;
-    grid-row-gap: 0px; */
-}
+    grid-row-gap: 0px;
+} */
 
-/* .portfolio{
-    height: 900px;
+.portfolio{
+    height: 750px;
     width: 100%;
     overflow:scroll;
-    display: flex;
-    flex-direction: column;
-} */
+    
+}
 .pseudoBody{
     position: relative;
 }
@@ -48,6 +47,10 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.customBtn{
+margin-right: 85%;
+}
 /* .links a:visited{
     text-decoration: none;
     color: White;
@@ -66,6 +69,8 @@
      /*  top: 20px; Adjust the distance from the top */
      /*  right: 10px; Adjust the distance from the right */
      margin-right: 85%;
+     /* border: 1px solid red; */
+     margin-top: 2%;
 }
 
 .footer{
