@@ -1,19 +1,21 @@
 
 .project{
 
-    padding: 5vh; 
+    /* padding: 5vh; 
     color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* padding-top:5vh;
-    padding-right: 0px; */
-    /* border: 1px solid white; */
-    /* color: white;
+   */
+    margin: 10px 80px 10px 80px;  
+
+    color: #fff;
     display: flex;
-    flex-direction: row;
-    */
-    margin: 10px 80px 10px 80px; 
+    flex-direction: column;
+    /* margin: 10px 80px; */
+    margin-bottom: 50px;
+    padding: 5vh;
+    padding-bottom: 1vh;
+    box-shadow: 1px 1px 0 #fff;
     
 }
 
